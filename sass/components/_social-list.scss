@@ -1,0 +1,44 @@
+.social__list {
+  display: flex;
+  justify-content: center;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: var(--social-not-active);
+
+  transition: color var(--time-transition) var(--timing-function),
+    background-color var(--time-transition) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.social__icons {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__link-white {
+  color: var(--primary-white-color);
+  background-color: var(--social-footer-bgcolor);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}

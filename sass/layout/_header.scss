@@ -1,0 +1,124 @@
+.header {
+  border: 1px solid #ececec;
+}
+
+.header-container,
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo-header {
+  margin-right: 93px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.logo--black {
+  color: var(--second-color-logo);
+}
+
+.header__nav-list {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-title-color);
+}
+
+.header__nav-item {
+  margin-right: 40px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.header__nav-link {
+  position: relative;
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--secondary-title-color);
+  transition: color var(--time-transition) var(--timing-function);
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+
+    opacity: 0;
+    transition: opacity var(--time-transition) var(--timing-function);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header__contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.header__contacts-item {
+  margin-right: 50px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.header__contacts-link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+
+  transition: color var(--time-transition) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header__contacts-envelope {
+  width: 16px;
+  height: 12px;
+}
+
+.header__contacts-smartphone {
+  width: 10px;
+  height: 16px;
+}
+
+.header__contacts-envelope,
+.header__contacts-smartphone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.current {
+  color: var(--accent-color);
+
+  &::after {
+    opacity: 1;
+  }
+}
