@@ -18,7 +18,7 @@
 
 <!-- header -->
 
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-container">
 
             <nav class="header__nav">
@@ -54,19 +54,20 @@
             </ul>
 
         </div>
-    </header> -->
+    </header>
+    <div></div>
     <main>
 <!-- Section hero -->
-        <!-- <section class="section-hero section hero__overlay">
+        <section class="section-hero section hero__overlay">
             <div class="container">
                 <h1 class="hero__heading">Эффективные решения для вашего бизнеса</h1>
                 <button data-modal-open class="hero__btn" type="button">Заказать услугу</button>
             </div>
-        </section> -->
+        </section>
 
 <!-- Section features -->
 
-        <!-- <section class="section">
+        <section class="section">
             <div class="container">
                 <h2 class="visually-hidden">Особенности</h2>
                 <ul class="features__list list">
@@ -114,43 +115,61 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
 <!-- Section what we do -->
 
-        <!-- <section class="section section-wedo">
+        <section class="section section-wedo">
             <div class="container">
                 <h2 class="wedo__heading">Чем мы занимаемся</h2>
                 <ul class="wedo__list list">
                     <li class="wedo__item">
-                        <img src="./images/index/box1.jpg" 
-                        alt="человек набирает текст" 
-                        width="370">
+                        <img 
+                            srcset="
+                                ./images/index/box1.jpg 1x, 
+                                ./images/index/box1@2x.jpg 2x" 
+                            src="./images/index/box1.jpg" 
+                            alt="человек набирает текст"
+                            width="370" 
+                        />
+
                         <div class="wedo__thumb">
                             <h3 class="wedo__title">Десктопные приложения</h3>
                         </div>
                     </li>
 
                     <li class="wedo__item">
-                        <img src="./images/index/box2.jpg" 
-                        alt="человек держит в руке телефон" 
-                        width="370">
+                        <img 
+                            srcset="
+                                ./images/index/box2.jpg 1x, 
+                                ./images/index/box2@2x.jpg 2x" 
+                            src="./images/index/box2.jpg"
+                            alt="человек держит в руке телефон" 
+                            width="370" 
+                        />
+
                         <div class="wedo__thumb">
                             <h3 class="wedo__title">Мобильные приложения</h3>
                         </div>
                     </li>
 
                     <li class="wedo__item">
-                        <img src="./images/index/box3.jpg" 
-                        alt="человек на планшете выбирает с палитры цвет" 
-                        width="370">
+                        <img 
+                            srcset="
+                                ./images/index/box3.jpg 1x, 
+                                ./images/index/box3@2x.jpg 2x" 
+                            src="./images/index/box3.jpg"
+                            alt="человек на планшете выбирает с палитры цвет" 
+                            width="370" 
+                        />
+
                         <div class="wedo__thumb">
                             <h3 class="wedo__title">Дизайнерские решения</h3>
                         </div>
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
 <!-- Section our team -->
 
@@ -161,25 +180,27 @@
                     <li class="team__item">
                         <picture>
                             <source
-                            srcset="
-                                ./images/index/team-card-1-d.jpg 1x, 
-                                ./images/index/team-card-1-d@2x.jpg 2x
-                            "
-                            media="(min-width:1200px)"
+                                srcset="
+                                    ./images/index/team-card-1-d.jpg 1x, 
+                                    ./images/index/team-card-1-d@2x.jpg 2x
+                                "
+                                media="(min-width:1200px)"
                             />
 
-                            <source srcset="
-                                ./images/index/team-card-1-t.jpg 1x, 
-                                ./images/index/team-card-1-t@2x.jpg 2x
-                            " 
-                            media="(min-width:768px)" 
+                            <source 
+                                srcset="
+                                    ./images/index/team-card-1-t.jpg 1x, 
+                                    ./images/index/team-card-1-t@2x.jpg 2x
+                                " 
+                                media="(min-width:768px)" 
                             />
 
-                            <source srcset="
-                                ./images/index/team-card-1-m.jpg 1x, 
-                                ./images/index/team-card-1-m@2x.jpg 2x
-                            " 
-                            media="(min-width:320px)" 
+                            <source 
+                                srcset="
+                                    ./images/index/team-card-1-m.jpg 1x, 
+                                    ./images/index/team-card-1-m@2x.jpg 2x
+                                " 
+                                media="(min-width:320px)" 
                             />
                             <img src="./images/index/team-card-1-d.jpg" alt="фотопортрет дизайнера продуктов Игоря Демьяненко">
                         </picture>
@@ -228,21 +249,28 @@
 
                     <li class="team__item">
                         <picture>
-                            <source srcset="
-                                                        ./images/index/team-card-2-d.jpg 1x, 
-                                                        ./images/index/team-card-2-d@2x.jpg 2x
-                                                    " media="(min-width:1200px)" />
+                            <source 
+                                srcset="
+                                    ./images/index/team-card-2-d.jpg 1x, 
+                                    ./images/index/team-card-2-d@2x.jpg 2x
+                                " 
+                                media="(min-width:1200px)" />
                         
-                            <source srcset="
-                                                        ./images/index/team-card-2-t.jpg 1x, 
-                                                        ./images/index/team-card-2-t@2x.jpg 2x
-                                                    " media="(min-width:768px)" />
+                            <source 
+                                srcset="
+                                    ./images/index/team-card-2-t.jpg 1x, 
+                                    ./images/index/team-card-2-t@2x.jpg 2x
+                                " 
+                                media="(min-width:768px)" />
                         
-                            <source srcset="
-                                                        ./images/index/team-card-2-m.jpg 1x, 
-                                                        ./images/index/team-card-2-m@2x.jpg 2x
-                                                    " media="(min-width:320px)" />
-                            <img src="./images/index/team-card-2-d.jpg" alt="фотопортрет дизайнера продуктов Игоря Демьяненко">
+                            <source 
+                                srcset="
+                                    ./images/index/team-card-2-m.jpg 1x, 
+                                    ./images/index/team-card-2-m@2x.jpg 2x
+                                " 
+                                media="(min-width:320px)" />
+
+                            <img src="./images/index/team-card-2-d.jpg" alt="фотопортрет фронтенд-разработчика Ольги Репиной">
                         </picture>
 
                         <div class="team__thumb">
@@ -289,22 +317,30 @@
 
                     <li class="team__item">
                         <picture>
-                            <source srcset="
-                                                        ./images/index/team-card-3-d.jpg 1x, 
-                                                        ./images/index/team-card-3-d@2x.jpg 2x
-                                                    " media="(min-width:1200px)" />
+                            <source 
+                                srcset="
+                                    ./images/index/team-card-3-d.jpg 1x, 
+                                    ./images/index/team-card-3-d@2x.jpg 2x
+                                " 
+                                media="(min-width:1200px)" />
                         
-                            <source srcset="
-                                                        ./images/index/team-card-3-t.jpg 1x, 
-                                                        ./images/index/team-card-3-t@2x.jpg 2x
-                                                    " media="(min-width:768px)" />
+                            <source 
+                                srcset="
+                                    ./images/index/team-card-3-t.jpg 1x, 
+                                    ./images/index/team-card-3-t@2x.jpg 2x
+                                " 
+                                media="(min-width:768px)" />
                         
-                            <source srcset="
-                                                        ./images/index/team-card-3-m.jpg 1x, 
-                                                        ./images/index/team-card-3-m@2x.jpg 2x
-                                                    " media="(min-width:320px)" />
-                            <img src="./images/index/team-card-3-d.jpg" alt="фотопортрет дизайнера продуктов Игоря Демьяненко">
+                            <source 
+                                srcset="
+                                    ./images/index/team-card-3-m.jpg 1x, 
+                                    ./images/index/team-card-3-m@2x.jpg 2x
+                                " 
+                                media="(min-width:320px)" />
+
+                            <img src="./images/index/team-card-3-d.jpg" alt="фотопортрет специалиста по маркетингу Николая Тарасова">
                         </picture>
+
                         <div class="team__thumb">
                             <h3 class="team__member">Николай Тарасов</h3>
                             <p class="team__proffesion" lang="en">Marketing</p>
@@ -349,22 +385,33 @@
 
                     <li class="team__item">
                         <picture>
-                            <source srcset="
-                                                        ./images/index/team-card-4-d.jpg 1x, 
-                                                        ./images/index/team-card-4-d@2x.jpg 2x
-                                                    " media="(min-width:1200px)" />
+                            <source 
+                                srcset="
+                                    ./images/index/team-card-4-d.jpg 1x, 
+                                    ./images/index/team-card-4-d@2x.jpg 2x
+                                " 
+                                media="(min-width:1200px)" 
+                            />
                         
-                            <source srcset="
-                                                        ./images/index/team-card-4-t.jpg 1x, 
-                                                        ./images/index/team-card-4-t@2x.jpg 2x
-                                                    " media="(min-width:768px)" />
+                            <source 
+                                srcset="
+                                    ./images/index/team-card-4-t.jpg 1x, 
+                                    ./images/index/team-card-4-t@2x.jpg 2x
+                                " 
+                                media="(min-width:768px)" 
+                            />
                         
-                            <source srcset="
-                                                        ./images/index/team-card-4-m.jpg 1x, 
-                                                        ./images/index/team-card-4-m@2x.jpg 2x
-                                                    " media="(min-width:320px)" />
-                            <img src="./images/index/team-card-4-d.jpg" alt="фотопортрет дизайнера продуктов Игоря Демьяненко">
+                            <source 
+                                srcset="
+                                    ./images/index/team-card-4-m.jpg 1x, 
+                                    ./images/index/team-card-4-m@2x.jpg 2x
+                                " 
+                                media="(min-width:320px)" 
+                            />
+
+                            <img src="./images/index/team-card-4-d.jpg" alt="фотопортрет дизайнера интерфейса Михаила Ермакова">
                         </picture>
+
                         <div class="team__thumb">
                             <h3 class="team__member">Михаил Ермаков</h3>
                             <p class="team__proffesion" lang="en">UI Designer</p>
@@ -413,7 +460,7 @@
 
 <!-- Clients -->
 
-        <!-- <section class="section">
+        <section class="section">
             <div class="container">
                 <h2 class="clients__heading">Постоянные клиенты</h2>
                 <ul class="clients__list list">
@@ -466,12 +513,12 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
 
     <!-- FOOTER -->
 
-    <!-- <footer class="section-footer footer">
+    <footer class="section-footer footer">
         <div class="container container-footer">
             <div class="footer__tablet-thumb">
                 <div class="footer__contain">
@@ -491,11 +538,11 @@
                             </li>
                         </ul>
                     </address>
-                </div> -->
+                </div>
 
                 <!-- Join -->
 
-                <!-- <div class="footer__thumb">
+                <div class="footer__thumb">
                     <p class="footer__text">ПРИСОЕДИНЯЙТЕСЬ</p>
                     <ul class="social__list list">
                         <li class="social__item">
@@ -531,11 +578,11 @@
                         </li>
                     </ul>
                 </div>
-            </div> -->
+            </div>
 
             <!-- Subscribe form -->
 
-            <!-- <form class="subscribe__form">
+            <form class="subscribe__form">
                 <label class="subscribe__label">
                     <span class="subscribe__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</span>
                     <input type="email" placeholder="E-mail" name="subscribe-mail" class="subscribe__input" required />
@@ -550,7 +597,7 @@
             </form>
 
         </div>
-    </footer> -->
+    </footer>
 
 <!-- modal window -->
 
