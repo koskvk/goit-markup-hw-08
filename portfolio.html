@@ -20,12 +20,13 @@
 
 <!-- header -->
 
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-container">
     
             <nav class="header__nav">
                 <a class="logo logo-header link" href="./index.html" lang="en">
-                    Web<span class="logo--black">Studio</span></a>
+                    Web<span class="logo--black">Studio</span>
+                </a>
     
                 <ul class="header__nav-list list">
                     <li class="header__nav-item">
@@ -41,6 +42,7 @@
             </nav>
     
             <ul class="header__contacts-list list">
+    
                 <li class="header__contacts-item">
                     <a href="mailto:info@devstudio.com" class="header__contacts-link link">
                         <svg class="header__contacts-envelope">
@@ -57,9 +59,68 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button class="open-menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="icon-menu-open">
+                    <use href="./images/icons.svg#icon-menu-open"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
+    
+    <!-- mob menu -->
+    
+    <div class="mob-menu js-menu-container" id="mobile-menu">
+        <div class="container mob-menu__container">
+            <div>
+                <button class="mob-menu__close-menu-btn js-close-menu">
+                    <svg class="icon-menu-close">
+                        <use href="./images/icons.svg#icon-menu-close"></use>
+                    </svg>
+                </button>
+                <ul class="list">
+                    <li class="mob-menu__nav-item">
+                        <a href="./index.html" class="mob-menu__nav-link link">Студия</a>
+                    </li>
+                    <li class="mob-menu__nav-item">
+                        <a href="./portfolio.html" class="mob-menu__nav-link link mob-menu__current">Портфолио</a>
+                    </li>
+                    <li class="mob-menu__nav-item">
+                        <a href="" class="mob-menu__nav-link link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="mob-menu__bottom">
+                <ul class="mob-menu__contacts-list list">
+                    <li class="mob-menu__contacts-item">
+                        <a href="tel:+380961111111" class="mob-menu__contacts-tel link">
+                            +38 096 111 11 11</a>
+                    </li>
+    
+                    <li class="mob-menu__contacts-item">
+                        <a href="mailto:info@devstudio.com" class="mob-menu__contacts-mail link">
+                            info@devstudio.com</a>
+                    </li>
+                </ul>
+    
+                <ul class="mob-menu__social-list list">
+                    <li class="mob-menu__social-item">
+                        <a href="" class="mob-menu__social-link link">Instagram</a>
+                    </li>
+                    <li class="mob-menu__social-item">
+                        <a href="" class="mob-menu__social-link link">Twitter</a>
+                    </li>
+                    <li class="mob-menu__social-item">
+                        <a href="" class="mob-menu__social-link link">Facebook</a>
+                    </li>
+                    <li class="mob-menu__social-item">
+                        <a href="" class="mob-menu__social-link link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
     
         </div>
-    </header> -->
+    </div>
 
 <!-- Main -->
 
@@ -571,6 +632,14 @@
     
         </div>
     </footer>
+
+    <!-- script to mobile menu -->
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
+
     </body>
     
     </html>

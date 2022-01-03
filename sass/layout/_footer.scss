@@ -120,6 +120,10 @@
   text-transform: uppercase;
 
   color: var(--primary-white-color);
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .subscribe__input {
