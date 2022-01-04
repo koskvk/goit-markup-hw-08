@@ -33,6 +33,7 @@
   margin-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
+    align-items: flex-start;
     margin-right: 70px;
     margin-bottom: 0px;
   }
@@ -50,6 +51,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
 }
 
 .footer__address-text {
@@ -74,6 +79,7 @@
   color: var(--footer-contacts-color);
 
   transition: color var(--time-transition) var(--timing-function);
+
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -95,6 +101,10 @@
   font-size: 14px;
   line-height: 1.14;
   color: var(--primary-white-color);
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .subscribe__form {
