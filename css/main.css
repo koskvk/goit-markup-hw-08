@@ -442,6 +442,12 @@ body {
   transition: transform var(--time-transition) var(--timing-function);
 }
 
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
 .mob-menu.is-open {
   transform: translateX(0);
 }
