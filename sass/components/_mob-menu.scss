@@ -11,6 +11,9 @@
 
   background-color: var(--primary-white-color);
 
+  pointer-events: none;
+  visibility: hidden;
+
   transform: translateX(100%);
   transition: transform var(--time-transition) var(--timing-function);
 
@@ -21,6 +24,8 @@
 
 .mob-menu.is-open {
   transform: translateX(0);
+  pointer-events: auto;
+  visibility: visible;
 }
 
 .mob-menu__container {

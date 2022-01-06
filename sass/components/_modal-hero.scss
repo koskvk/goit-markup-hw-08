@@ -68,6 +68,14 @@
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50px;
+
+  transition: border var(--time-transition) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+
   &:hover .modal__icon-close,
   &:focus .modal__icon-close {
     fill: var(--accent-color);
@@ -215,8 +223,8 @@
 .modal__icon-chekbox {
   margin-right: 7px;
 
-  width: 16px;
-  height: 15px;
+  max-width: 16px;
+  max-height: 15px;
 
   cursor: pointer;
   border: 2px solid var(--secondary-title-color);
